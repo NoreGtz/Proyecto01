@@ -1,0 +1,184 @@
+body
+{
+  background-color: #9dc6a7;
+  color: #2e2824ff;
+  font-family: monospace;
+}
+
+.logo
+{
+  width: 60px;
+  height: 60px;
+}
+
+#nav
+{
+  background-color: #2e2824ff;
+  color: #172957;
+}
+
+.signin
+{
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+.form-control
+{
+  width: 60%;
+  align-items: center;
+  margin-left: 20%;
+  border-radius: 25px;
+}
+
+.buttons
+{
+  color: #d1f5d3;
+  padding: 2%;
+  width: 20%;
+  margin-left: 40%;
+  background-color: #2e2824ff;
+  border-radius: 25px;
+  border: None;
+}
+
+.buttons1
+{
+  color: #d1f5d3;
+  width: 20%;
+  height: 40px;
+  float: right;
+  background-color: #2e2824ff;
+  border-radius: 25px;
+  border: None;
+}
+.log, .mensaje
+{
+  text-align: center;
+}
+
+.col
+{
+  padding-top: 0;
+}
+
+.us
+{
+  height: 40px;
+  margin-top: 8%;
+  padding-top: 10px;
+  padding-left: 5%;
+  background-color: #2e2824ff;
+  color: white;
+}
+
+.search
+{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.searcht
+{
+  padding-left: 2%;
+  height: 40px;
+  width: 60%;
+  border-radius: 25px;
+}
+
+.revb
+{
+  color: #d1f5d3;
+  width: 20%;
+  height: 40px;
+  background-color: #2e2824ff;
+  border-radius: 25px;
+  border: None;
+}
+.rev
+{
+  text-align: center;
+}
+.rev textarea
+{
+  border-radius: 25px;
+}
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+input[type="radio"]
+{
+  display: none;
+}
+
+label
+{
+  color: grey;
+  font-size: 30px;
+}
+
+.calif
+{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label
+{
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label
+{
+  color: orange;
+}
+
+.info
+  {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+.info a
+{
+  color: #398684;
+  font-size: 20px;
+}
+a:hover
+{
+  text-decoration: none;
+  color: 	#cef19d;
+}
+.bookinfo
+{
+  height: auto;
+  margin-top: 2%;
+  background-color: #76a889;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.re
+{
+  padding-left: 2%;
+  margin-right: 5%;
+}
+
+.star
+{
+  margin-top: 2px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>Search a Book</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="nav">
+    <a class="navbar-brand" href="/"><img src="../static/logo.svg" class="logo" alt="">OnceUponABook?</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div class="navbar-nav ml-auto text-center">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/reviews">Reviews</a>
+          <a class="nav-item nav-link " href="/allbooks">Books</a>
+        <a class="nav-item nav-link active" href="/search">SearchABook</a>
+        <a class="nav-item nav-link "href="/close">Close</a>
+      </div>
+    </div>
+    </nav>
+
+    <div class="us">User: {{session['user']}}</div>
+
+  <div class="search">
+      <form class="" method="post">
+        <input type="text" placeholder="Search.." name="search" class="searcht">
+        <button type="submit" class="buttons1">Search</button>
+      </form>
+  </div>
+<div class="info">
+  <h1>Books</h1>
+
+  <ul>
+    {% for book in books %}
+      <li><a href="{{ url_for('book', book_isbn=book.isbn)}}">{{book.isbn}}:  {{ book.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
